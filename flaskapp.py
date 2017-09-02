@@ -12,5 +12,9 @@ def websocket(ws):
 def hello():
     return "Hello World! 3"
 
+@app.route("/test")
+def hello():
+    return "TEST 1"
+
 if __name__ == "__main__":
     app.run()
