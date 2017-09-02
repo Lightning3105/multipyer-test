@@ -6,6 +6,8 @@ import gunicorn.app.wsgiapp
 
 host = os.environ.get('OPENSHIFT_DIY_IP', '127.0.0.1')
 port = os.environ.get('OPENSHIFT_DIY_PORT', '8080')
+print("===STARTING===")
+print(host, port)
 
 # This line
 cmd = 'gunicorn -b %s:%d -k "flask_sockets.worker" flaskapp:app' % (host, int(port))
