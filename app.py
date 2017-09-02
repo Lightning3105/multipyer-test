@@ -4,7 +4,7 @@ import logging
 import shlex
 import gunicorn.app.wsgiapp
 
-host = '0.0.0.0' #os.environ.get('OPENSHIFT_DIY_IP', '127.0.0.1')
+host = '172.30.122.202' #os.environ.get('OPENSHIFT_DIY_IP', '127.0.0.1')
 port = os.environ.get('OPENSHIFT_DIY_PORT', '8080')
 print("===STARTING===")
 print(os.environ)
